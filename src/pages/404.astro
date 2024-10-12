@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Logo from "../components/Logo.astro";
+
+import '@fontsource-variable/maven-pro';
+
+---
+
+<Layout title="404 Page Not Found">
+    <div class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-w-full tw-mx-auto tw-min-h-screen">
+        <a href="/">
+            <Logo fontSize="3vw" />
+        </a>
+        <h1 class="tw-font-bold tw-text-[5vw] tw-text-white">Oooopppsss!</h1>
+        <p class="tw-font-bold tw-text-[2.5vw] tw-p-[2vh] tw-text-white">404 - page not found</p>
+    </div>
+</Layout>
+
+<style>
+    h1 {
+        text-shadow: 0px 0.5vw 0.5vw rgba(147, 137, 137, 0.25);
+        font-family: 'Maven Pro Variable';
+    }
+    p {
+        text-shadow: 0px 0.1vw 0.1vw rgba(255, 255, 255, 0.25);
+    }
+</style>

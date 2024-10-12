@@ -1,0 +1,36 @@
+---
+
+import '@fontsource/lemon';
+
+---
+
+<h2 class="logo tw-text-center tw-font-bold tw-text-[#F82F62] tw-drop-shadow-md tw-text-2xl sm:tw-text-3xl md:tw-text-4xl lg:tw-text-4xl">K-wavve</h2>
+
+<style>
+    .logo {
+        font-family: "Lemon";
+        --stroke-width: 0.4rem;
+        -webkit-text-stroke: var(--stroke-width) #2E2C2C;
+        paint-order: stroke fill;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+
+    @screen sm {
+        .logo {
+            --stroke-width: 0.5rem;
+        }
+    }
+
+    @screen md {
+        .logo {
+            --stroke-width: 0.6rem;
+        }
+    }
+
+    @screen lg {
+        .logo {
+            --stroke-width: 0.7rem;
+        }
+    }
+</style>

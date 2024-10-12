@@ -1,0 +1,29 @@
+---
+import '@fontsource-variable/maven-pro';
+import Logo from './Logo.astro';
+import SearchBar from './SearchBar.astro';
+import Profile from './icons/Profile.astro';
+---
+<nav class="tw-flex tw-justify-between tw-items-center tw-mx-4 sm:tw-mx-6 md:tw-mx-8 lg:tw-mx-12 xl:tw-mx-16 tw-mt-6 sm:tw-mt-6 lg:tw-mt-8">
+    <div class="tw-ml-2 sm:tw-ml-4 md:tw-ml-6 lg:tw-ml-8 xl:tw-ml-10">
+        <Logo />
+    </div>
+    <div class="tw-flex-1 tw-grid tw-grid-cols-4 tw-text-[#E6E6E6] tw-text-center tw-ml-auto tw-px-3 md:tw-px-6 lg:tw-px-10 xl:tw-px-16 2xl:tw-px-auto">
+        <a href="/" class="nav-text">Home</a>
+        <a href="/kpop" class="nav-text">K-POP</a>
+        <a href="/movies" class="nav-text">Movies</a>
+        <a href="/dramas" class="nav-text">Dramas</a>
+    </div>
+ 
+    <div class="tw-flex tw-mr-1 md:tw-mr-1 lg:tw-mr-2
+    tw-items-center tw-gap-2 sm:tw-gap-2 md:tw-gap-4 lg:tw-gap-20">
+        <SearchBar class="tw-w-32 sm:tw-w-44 md:tw-w-52 lg:tw-w-62 xl:tw-w-80 tw-h-7 sm:tw-h-8 md:tw-h-9 lg:tw-h-10 tw-text-lg tw-font-harmattan tw-rounded-lg sm:tw-rounded-lg md:tw-rounded-xl lg:tw-rounded-xl tw-border-2 tw-border-[#E6E6E6] tw-text-[#E6E6E6] tw-bg-transparent tw-caret-[#E6E6E6] focus:tw-outline-none focus:tw-ring-1 focus:tw-ring-[#E6E6E6] focus:tw-border-[#E6E6E6] tw-pl-10 tw-pr-4" />
+        <Profile class="tw-w-8 tw-h-8 sm:tw-w-10 sm:tw-h-10 md:tw-w-12 md:tw-h-12 lg:tw-w-14 lg:tw-h-14 tw-mr-2 sm:tw-mr-2 md:tw-mr-4 lg:tw-mr-5" />
+    </div>
+</nav>
+
+<style>
+    .nav-text {
+        @apply hover:tw-text-white tw-no-underline tw-font-maven-pro hover:tw-font-bold tw-text-xs lg:tw-text-base xl:tw-text-xl;
+    }
+</style>
